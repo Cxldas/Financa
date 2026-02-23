@@ -2,7 +2,7 @@
 
 Aplicação web completa para **gestão financeira pessoal**, com **multi-tenant por usuário** (isolamento por `userId`), **autenticação segura** (JWT access + refresh em cookie httpOnly com rotação), **CRUD de transações e categorias**, **relatórios**, **gráficos** e **exportação CSV** (respeitando filtros).
 
-## ✨ Features
+##  Features
 - ✅ Cadastro/Login com senha forte
 - ✅ Access Token curto + Refresh Token longo (cookie httpOnly + rotação)
 - ✅ Multi-tenant: cada usuário vê apenas seus dados
@@ -39,7 +39,7 @@ root/ docker-compose.yml backend/ frontend/
 
 ---
 
-## ✅ Pré-requisitos
+##  Pré-requisitos
 - Node.js 20+
 - Docker + Docker Compose
 - npm (ou pnpm/yarn, se adaptar os comandos)
@@ -98,7 +98,7 @@ http://localhost:5173
 
 ---
 
-🔐 Autenticação (segura)
+ Autenticação (segura)
 
 Access Token (JWT): ~15min (enviado em Authorization: Bearer)
 
@@ -124,7 +124,7 @@ Fluxo:
 
 ---
 
-🧩 Multi-tenant (isolamento por usuário)
+ Multi-tenant (isolamento por usuário)
 
 Todas as tabelas de domínio possuem userId
 
@@ -138,7 +138,7 @@ Teste E2E garante que usuário B não acessa dados do usuário A
 
 ---
 
-🧾 Endpoints principais
+ Endpoints principais
 
 Auth
 
@@ -197,7 +197,7 @@ GET /export/transactions.csv?startDate=&endDate=&type=&categoryId=&q=
 
 ---
 
-🗓️ Timezone (America/Bahia)
+ Timezone (America/Bahia)
 
 Transações armazenam date como DATE (sem hora)
 
@@ -209,7 +209,7 @@ Filtros startDate/endDate são inclusivos
 
 ---
 
-📊 Gráficos no dashboard
+ Gráficos no dashboard
 
 Pizza: despesas por categoria (top 5)
 
@@ -223,7 +223,7 @@ Todos respeitam o filtro de período.
 
 ---
 
-📤 Exportação CSV
+ Exportação CSV
 
 Exporta transações aplicando os mesmos filtros do endpoint de listagem
 
@@ -243,7 +243,7 @@ transactions_YYYY-MM-DD_to_YYYY-MM-DD.csv
 
 ---
 
-🧪 Testes
+ Testes
 
 Back-end (E2E)
 
@@ -271,7 +271,8 @@ npm run test
 
 ---
 
-🛡️ Checklist de segurança
+
+ Checklist de segurança
 
 [x] Hash de senha (bcrypt)
 
