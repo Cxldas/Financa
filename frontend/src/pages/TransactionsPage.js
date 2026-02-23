@@ -325,14 +325,14 @@ const TransactionsPage = () => {
               <div className="space-y-2">
                 <Label>Tipo</Label>
                 <Select
-                  value={filters.type}
-                  onValueChange={(value) => setFilters(prev => ({ ...prev, type: value }))}
+                  value={filters.type || "ALL"}
+                  onValueChange={(value) => setFilters(prev => ({ ...prev, type: value === "ALL" ? "" : value }))}
                 >
                   <SelectTrigger data-testid="type-filter">
                     <SelectValue placeholder="Todos" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Todos</SelectItem>
+                    <SelectItem value="ALL">Todos</SelectItem>
                     <SelectItem value="INCOME">Receitas</SelectItem>
                     <SelectItem value="EXPENSE">Despesas</SelectItem>
                   </SelectContent>
@@ -343,14 +343,14 @@ const TransactionsPage = () => {
               <div className="space-y-2">
                 <Label>Categoria</Label>
                 <Select
-                  value={filters.category_id}
-                  onValueChange={(value) => setFilters(prev => ({ ...prev, category_id: value }))}
+                  value={filters.category_id || "ALL"}
+                  onValueChange={(value) => setFilters(prev => ({ ...prev, category_id: value === "ALL" ? "" : value }))}
                 >
                   <SelectTrigger data-testid="category-filter">
                     <SelectValue placeholder="Todas" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Todas</SelectItem>
+                    <SelectItem value="ALL">Todas</SelectItem>
                     {categories.map(cat => (
                       <SelectItem key={cat.id} value={cat.id}>
                         {cat.name}
@@ -627,14 +627,14 @@ const TransactionsPage = () => {
             <div className="space-y-2">
               <Label>Método de Pagamento</Label>
               <Select
-                value={formData.payment_method}
-                onValueChange={(value) => setFormData(prev => ({ ...prev, payment_method: value }))}
+                value={formData.payment_method || "NONE"}
+                onValueChange={(value) => setFormData(prev => ({ ...prev, payment_method: value === "NONE" ? "" : value }))}
               >
                 <SelectTrigger data-testid="payment-method-select">
                   <SelectValue placeholder="Selecione (opcional)" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Nenhum</SelectItem>
+                  <SelectItem value="NONE">Nenhum</SelectItem>
                   <SelectItem value="PIX">PIX</SelectItem>
                   <SelectItem value="CREDIT">Crédito</SelectItem>
                   <SelectItem value="DEBIT">Débito</SelectItem>
