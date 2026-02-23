@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import uuid
 
 class FinGestaoAPITester:
-    def __init__(self, base_url="https://moneysense-15.preview.emergentagent.com"):
+    def __init__(self, base_url="http://localhost:8001"):
         self.base_url = base_url
         self.token = None
         self.refresh_token = None
