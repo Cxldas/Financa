@@ -1,0 +1,149 @@
+{
+  "summary": {
+    "total_tests": 23,
+    "passed_tests": 23,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "timestamp": "2026-02-23T14:02:08.585259"
+  },
+  "results": [
+    {
+      "test": "Health Check",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:05.943961"
+    },
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:06.350189"
+    },
+    {
+      "test": "Registration Token Set",
+      "success": true,
+      "details": "Got tokens and user_id: f1217623-4269-4f48-a150-fbe891fc0d04",
+      "timestamp": "2026-02-23T14:02:06.350824"
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:06.711016"
+    },
+    {
+      "test": "Login Token Update",
+      "success": true,
+      "details": "Tokens updated from login",
+      "timestamp": "2026-02-23T14:02:06.711661"
+    },
+    {
+      "test": "Get Current User",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:06.877961"
+    },
+    {
+      "test": "Refresh Token",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:07.036191"
+    },
+    {
+      "test": "List Categories",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:07.142612"
+    },
+    {
+      "test": "Default Categories Created",
+      "success": true,
+      "details": "Found 4 expected categories",
+      "timestamp": "2026-02-23T14:02:07.143265"
+    },
+    {
+      "test": "Create Category",
+      "success": true,
+      "details": "Status: 201, Expected: 201",
+      "timestamp": "2026-02-23T14:02:07.256306"
+    },
+    {
+      "test": "Get Categories for Transaction",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:07.378345"
+    },
+    {
+      "test": "Create Income Transaction",
+      "success": true,
+      "details": "Status: 201, Expected: 201",
+      "timestamp": "2026-02-23T14:02:07.493412"
+    },
+    {
+      "test": "Get Categories for Transaction",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:07.622256"
+    },
+    {
+      "test": "Create Expense Transaction",
+      "success": true,
+      "details": "Status: 201, Expected: 201",
+      "timestamp": "2026-02-23T14:02:07.741771"
+    },
+    {
+      "test": "List Transactions",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:07.906984"
+    },
+    {
+      "test": "List Transactions Data",
+      "success": true,
+      "details": "Found 0 transactions",
+      "timestamp": "2026-02-23T14:02:07.907617"
+    },
+    {
+      "test": "Dashboard Data",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:08.077952"
+    },
+    {
+      "test": "Dashboard Data Structure",
+      "success": true,
+      "details": "All required fields present",
+      "timestamp": "2026-02-23T14:02:08.078649"
+    },
+    {
+      "test": "Monthly Report",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:08.217127"
+    },
+    {
+      "test": "Monthly Report Data",
+      "success": true,
+      "details": "Report contains correct month/year",
+      "timestamp": "2026-02-23T14:02:08.217766"
+    },
+    {
+      "test": "Create Financial Goal",
+      "success": true,
+      "details": "Status: 201, Expected: 201",
+      "timestamp": "2026-02-23T14:02:08.332058"
+    },
+    {
+      "test": "CSV Export (No Auth)",
+      "success": true,
+      "details": "Status: 401, Expected: 401",
+      "timestamp": "2026-02-23T14:02:08.443806"
+    },
+    {
+      "test": "CSV Export (With Auth)",
+      "success": true,
+      "details": "Status: 200, Expected: 200",
+      "timestamp": "2026-02-23T14:02:08.584321"
+    }
+  ]
+}
