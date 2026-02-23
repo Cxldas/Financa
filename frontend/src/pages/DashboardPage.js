@@ -205,8 +205,8 @@ const DashboardPage = () => {
           </CardHeader>
           <CardContent>
             {expenses_by_category.length > 0 ? (
-              <div className="h-[300px]">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[300px] min-w-0">
+                <ResponsiveContainer width="100%" height={280}>
                   <PieChart>
                     <Pie
                       data={expenses_by_category}
@@ -249,8 +249,8 @@ const DashboardPage = () => {
           </CardHeader>
           <CardContent>
             {income_vs_expense_daily.length > 0 ? (
-              <div className="h-[300px]">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[300px] min-w-0">
+                <ResponsiveContainer width="100%" height={300}>
                   <LineChart data={income_vs_expense_daily}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#27272a" />
                     <XAxis 
@@ -302,8 +302,8 @@ const DashboardPage = () => {
             <CardTitle className="text-lg font-semibold">Comparativo Mensal</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="h-[300px]">
-              <ResponsiveContainer width="100%" height="100%">
+            <div className="h-[300px] min-w-0">
+              <ResponsiveContainer width="100%" height={300}>
                 <BarChart data={monthly_comparison}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#27272a" />
                   <XAxis dataKey="month" stroke="#71717a" fontSize={12} />
