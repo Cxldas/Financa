@@ -287,8 +287,8 @@ const ReportsPage = () => {
           </CardHeader>
           <CardContent>
             {top_expense_categories.length > 0 ? (
-              <div className="h-[300px]">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[300px] min-w-0">
+                <ResponsiveContainer width="100%" height={200}>
                   <PieChart>
                     <Pie
                       data={top_expense_categories}
@@ -334,8 +334,8 @@ const ReportsPage = () => {
           </CardHeader>
           <CardContent>
             {daily_balance.length > 0 ? (
-              <div className="h-[300px]">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[300px] min-w-0">
+                <ResponsiveContainer width="100%" height={300}>
                   <BarChart data={daily_balance}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#27272a" />
                     <XAxis 
